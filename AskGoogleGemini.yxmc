@@ -1,0 +1,1583 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="56" y="440" width="470" height="199" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>UI questions</Caption>
+          <Style TextColor="#314c4a" FillColor="#a6ffff" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>UI questions</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+            <Position x="222" y="474" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>v_temperature</Name>
+              <AnnotationText>v_temperature</AnnotationText>
+              <DefaultAnnotationText>v_temperature</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="222" y="570" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Update Value</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+            <Position x="366" y="474" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>v_candidate_count</Name>
+              <AnnotationText>v_candidate_count</AnnotationText>
+              <DefaultAnnotationText>v_candidate_count</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="366" y="570" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Update Value</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+            <Position x="66" y="474" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>v_api_key</Name>
+              <DefaultAnnotationText>v_api_key</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="66" y="570" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Update Value</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="55" width="785" height="368" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>1. AI API Call</Caption>
+          <Style TextColor="#314c4a" FillColor="#80ff80" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>1. AI API Call</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="692" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>URl</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues>
+                  <Item name="Content-Type" value="application/json" />
+                </NameValues>
+                <Fields orderChanged="False">
+                  <Field name="RecordID" selected="False" />
+                  <Field name="Query" selected="False" />
+                  <Field name="URl" selected="False" />
+                  <Field name="temperature" selected="False" />
+                  <Field name="candidateCount" selected="False" />
+                  <Field name="text" selected="False" />
+                  <Field name="body" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>POST</HTTPAction>
+                <QueryStringBodyMode>Field</QueryStringBodyMode>
+                <Field>body</Field>
+              </Payload>
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+              <EnableRPM value="False" />
+              <DcmAdvancedAuth value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Api query</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=keyvalue&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="296" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="1.0" field="temperature" size="2147483647" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[temperature = 1.0
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Query" size="2147483647" source="Formula: &quot;Write me a job description for an Alteryx Engineer&quot;" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: [URL]+&quot;key&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="392" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="1.0" field="candidateCount" size="2147483647" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[candidateCount = 1.0
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="392" y="197" width="108" height="216" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>CandidateCount: integer
+
+Number of generated responses to return.
+
+This value must be between [1, 8], inclusive. If unset, this will default to 1.</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="Silver" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="200" y="197" width="184" height="216" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Temperature: number
+
+Controls the randomness of the output. Note: The default value varies by model, see the Model.temperature attribute of the Model returned the getModel function.
+
+Values can range from [0.0,1.0], inclusive. A value closer to 1.0 will produce responses that are more varied and creative, while a value closer to 0.0 will typically result in more straightforward responses from the model.</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="Silver" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="500" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Query]" field="text" size="2147483647" type="V_String" />
+                <FormulaField expression="'{&quot;prompt&quot;:&#xA;		 {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" field="body" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Create Prompt from supplied attribution</AnnotationText>
+              <DefaultAnnotationText>text = [Query]
+body = '{"prompt":
+		 {"text": "'+ [text] + 
+'"}
+,
+    "temperatu...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Query" size="2147483647" source="Formula: &quot;Write me a job description for an Alteryx Engineer&quot;" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: [URL]+&quot;key&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="608" y="197" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_44620_0569167b0f307043b16d7e9c16778e4b_\Engine_44620_46ebb25e4a07ee44a99c6d389cd475c7~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+            <Position x="764" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JSON_Field>DownloadData</JSON_Field>
+              <IncludeInOutput value="False" />
+              <SingleField value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Json parse</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="Formula: &quot;Write me a job description for an Alteryx Engineer&quot;" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: [URL]+&quot;key&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="608" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Record ID per query</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="Formula: &quot;Write me a job description for an Alteryx Engineer&quot;" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: [URL]+&quot;key&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="68" y="195" width="108" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Input contains Key
+Change Model used Here</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="Silver" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="211" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=keyvalue&quot;" field="URl" size="2147483647" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>API key</AnnotationText>
+              <DefaultAnnotationText>URl = "https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:g...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=keyvalue&quot;" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+            <Position x="104" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UseFileInput value="False" />
+              <Name>Text Input</Name>
+              <Abbrev>I</Abbrev>
+              <ShowFieldMap value="True" />
+              <Optional value="False" />
+              <TextInput>
+                <Configuration>
+                  <NumRows value="1" />
+                  <Fields>
+                    <Field name="Query" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>Write Me a Software Engineer Job Description</c>
+                    </r>
+                  </Data>
+                </Configuration>
+              </TextInput>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Input</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="True" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="836" y="54" width="938" height="268" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>2. Data Prep &amp; Standardization</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>2. Data Prep &amp; Standardization</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="846" y="88" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>JSON_Name</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>JSON_Name</RootName>
+              <Delimeters value="." />
+              <NumFields value="5" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>JSON split</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="Formula: &quot;Write me a job description for an Alteryx Engineer&quot;" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: [URL]+&quot;key&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name5" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="930" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[JSON_Name3]+[JSON_Name5]" field="column_name" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[column_name = [JSON_Name3]+[JSON_Name5]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="Formula: &quot;Write me a job description for an Alteryx Engineer&quot;" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: [URL]+&quot;key&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name5" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field name="column_name" size="1073741823" source="Formula: [JSON_Name3]+[JSON_Name5]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="1146" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="RecordID" />
+                <Field field="Query" />
+                <Field field="URl" />
+                <Field field="temperature" />
+                <Field field="candidateCount" />
+                <Field field="text" />
+                <Field field="body" />
+                <Field field="DownloadHeaders" />
+                <Field field="JSON_Name2" />
+              </GroupFields>
+              <HeaderField field="column_name" />
+              <DataField field="JSON_ValueString" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Json Values to Array Columns</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Query" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="URl" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="temperature" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="text" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="body" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1062" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>contains([JSON_Name],'output',1)</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Outputs</AnnotationText>
+              <DefaultAnnotationText>contains([JSON_Name],'output',1)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_CLASS" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_VALUE" name="JSON_Name5" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field name="column_name" size="1073741823" source="Formula: [JSON_Name3]+[JSON_Name5]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_CLASS" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_VALUE" name="JSON_Name5" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field name="column_name" size="1073741823" source="Formula: [JSON_Name3]+[JSON_Name5]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1146" y="233" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>contains([JSON_Name],'safetyrating',1)</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Safety Ratings</AnnotationText>
+              <DefaultAnnotationText>contains([JSON_Name],'safetyrating',1)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_CLASS" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_VALUE" name="JSON_Name5" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field name="column_name" size="1073741823" source="Formula: [JSON_Name3]+[JSON_Name5]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_CLASS" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_VALUE" name="JSON_Name5" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field name="column_name" size="1073741823" source="Formula: [JSON_Name3]+[JSON_Name5]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1290" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>contains([JSON_ValueString],'category',1)</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Split category and probability</AnnotationText>
+              <DefaultAnnotationText>contains([JSON_ValueString],'category',1)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_CLASS" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_VALUE" name="JSON_Name5" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field name="column_name" size="1073741823" source="Formula: [JSON_Name3]+[JSON_Name5]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_CLASS" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_VALUE" name="JSON_Name5" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field name="column_name" size="1073741823" source="Formula: [JSON_Name3]+[JSON_Name5]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1362" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="JSON_Name4" />
+                <Field field="JSON_Name2" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="JSON_Name4" />
+                <Field field="JSON_Name2" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_URL" selected="False" input="Left_" />
+                    <SelectField field="Left_temperature" selected="False" input="Left_" />
+                    <SelectField field="Left_candidateCount" selected="False" input="Left_" />
+                    <SelectField field="Left_text" selected="False" input="Left_" />
+                    <SelectField field="Left_body" selected="False" input="Left_" />
+                    <SelectField field="Left_DownloadHeaders" selected="False" input="Left_" />
+                    <SelectField field="Left_JSON_Name" selected="False" input="Left_" />
+                    <SelectField field="Left_JSON_ValueString" selected="True" rename="HEADER" input="Left_" />
+                    <SelectField field="Left_JSON_Name1" selected="False" input="Left_" />
+                    <SelectField field="Left_JSON_Name2" selected="False" input="Left_" />
+                    <SelectField field="Left_JSON_Name3" selected="False" input="Left_" />
+                    <SelectField field="Left_JSON_Name4" selected="False" input="Left_" />
+                    <SelectField field="Left_JSON_Name5" selected="False" input="Left_" />
+                    <SelectField field="Left_column_name" selected="False" input="Left_" />
+                    <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                    <SelectField field="Right_Query" selected="True" rename="Right_Query" input="Right_" />
+                    <SelectField field="Right_URL" selected="False" rename="Right_URL" input="Right_" />
+                    <SelectField field="Right_temperature" selected="False" rename="Right_temperature" input="Right_" />
+                    <SelectField field="Right_candidateCount" selected="False" rename="Right_candidateCount" input="Right_" />
+                    <SelectField field="Right_text" selected="False" rename="Right_text" input="Right_" />
+                    <SelectField field="Right_body" selected="False" rename="Right_body" input="Right_" />
+                    <SelectField field="Right_DownloadHeaders" selected="False" rename="Right_DownloadHeaders" input="Right_" />
+                    <SelectField field="Right_JSON_Name" selected="False" rename="Right_JSON_Name" input="Right_" />
+                    <SelectField field="Right_JSON_ValueString" selected="True" rename="VALUE" input="Right_" />
+                    <SelectField field="Right_JSON_Name1" selected="False" rename="Right_JSON_Name1" input="Right_" />
+                    <SelectField field="Right_JSON_Name2" selected="False" rename="Right_JSON_Name2" input="Right_" />
+                    <SelectField field="Right_JSON_Name3" selected="False" rename="Right_JSON_Name3" input="Right_" />
+                    <SelectField field="Right_JSON_Name4" selected="False" rename="Right_JSON_Name4" input="Right_" />
+                    <SelectField field="Right_JSON_Name5" selected="False" rename="Right_JSON_Name5" input="Right_" />
+                    <SelectField field="Right_column_name" selected="False" rename="Right_column_name" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_CLASS" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_VALUE" name="JSON_Name5" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field name="column_name" size="1073741823" source="Formula: [JSON_Name3]+[JSON_Name5]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="HEADER" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="Right_Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="VALUE" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_CLASS" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_VALUE" name="JSON_Name5" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field name="column_name" size="1073741823" source="Formula: [JSON_Name3]+[JSON_Name5]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="1470" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="RecordID" />
+              </GroupFields>
+              <HeaderField field="HEADER" />
+              <DataField field="VALUE" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Single array per record</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="CrossTab:Group:Concat:" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1566" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="RecordID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="RecordID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_output" selected="False" input="Left_" />
+                    <SelectField field="Right_RecordID" selected="False" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Safety Ratings</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="RecordID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Query" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="URl" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="temperature" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="text" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="body" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="output" size="10000" source="TextInput:" type="V_WString" />
+                <Field name="Description" size="1073741823" source="Formula: [output]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="RecordID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Query" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="URl" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="temperature" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="text" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="body" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="Description" size="1073741823" source="Formula: [output]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="RecordID" source="CrossTab:Group:Concat:" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1350" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[output]" field="Description" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Encapsulate Output</AnnotationText>
+              <DefaultAnnotationText><![CDATA[Description = [output]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Query" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="URl" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="temperature" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="text" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="body" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="output" size="10000" source="TextInput:" type="V_WString" />
+                <Field name="Description" size="1073741823" source="Formula: [output]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+            <Position x="1650" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Name>Bard API Output</Name>
+              <Abbrev>O</Abbrev>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Output</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1002" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="JSON_Name2" selected="True" description="CANDIDATE" />
+                <SelectField field="JSON_Name3" selected="True" description="ELEMENT" />
+                <SelectField field="JSON_Name4" selected="True" description="ELEMENT_CLASS" />
+                <SelectField field="JSON_Name5" selected="True" description="ELEMENT_VALUE" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
+                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_CLASS" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="ELEMENT_VALUE" name="JSON_Name5" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field name="column_name" size="1073741823" source="Formula: [JSON_Name3]+[JSON_Name5]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1290" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Query" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="URl" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="temperature" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="text" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="body" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field description="CANDIDATE" name="JSON_Name2" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="output" size="10000" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1146" y="186" width="140" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>output init</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>output init</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="49">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+                <Position x="1170" y="234" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <NumRows value="1" />
+                  <Fields>
+                    <Field name="output" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>toto</c>
+                    </r>
+                  </Data>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <AnnotationText>output initialization to avoid error</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="output" size="2147483647" source="TextInput:" type="V_String" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+            </Node>
+            <Node ToolID="50">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="1230" y="234" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="output" selected="True" type="V_WString" size="10000" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="output" size="10000" source="TextInput:" type="V_WString" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="52">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+                <Position x="1302" y="234" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>First</Mode>
+                  <N>0</N>
+                  <GroupFields orderChanged="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>First 0 rows</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="output" size="10000" source="TextInput:" type="V_WString" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="37" Connection="Question" />
+      <Destination ToolID="38" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="38" Connection="Action" />
+      <Destination ToolID="3" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="39" Connection="Question" />
+      <Destination ToolID="40" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="40" Connection="Action" />
+      <Destination ToolID="4" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="43" Connection="Question" />
+      <Destination ToolID="44" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="44" Connection="Action" />
+      <Destination ToolID="45" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="False" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="20" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="False" />
+      <Destination ToolID="20" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Join" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="22" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Join" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>v_api_key</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>v_temperature</Name>
+        <Value />
+        <IsNumeric value="True" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>v_candidate_count</Name>
+        <Value />
+        <IsNumeric value="True" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>AskGoogleGemini</Name>
+      <Description>Allows user to ask Google Gemini AI</Description>
+      <RootToolName />
+      <ToolVersion>1.0</ToolVersion>
+      <ToolInDb value="False" />
+      <CategoryName>GenAi</CategoryName>
+      <SearchTags>GenAi, Google, Gemini, Bard, API</SearchTags>
+      <Author>Simon AUBERT</Author>
+      <Company>Orange Business (Business &amp; Decision)</Company>
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="54e5aa48-2674-4f63-9c20-7f01353d01ab" />
+      <Telemetry>
+        <PreviousWorkflowId value="b47f4493-ebc0-41cc-8bda-45f4386ce2b8" />
+        <OriginWorkflowId value="981d01f0-8281-4f79-bca1-4dbf9cbf720b" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="38" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>1.0</ReplaceText>
+              <Destination>3/FormulaFields/FormulaField/@expression</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="40" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>1.0</ReplaceText>
+              <Destination>4/FormulaFields/FormulaField/@expression</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="44" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>keyvalue</ReplaceText>
+              <Destination>45/FormulaFields/FormulaField/@expression</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (36)</Name>
+          <ToolId value="36" />
+          <Questions>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Enter  API Key</Description>
+              <Name>v_api_key</Name>
+              <ToolId value="43" />
+              <Default>enter your key here</Default>
+              <Password value="True" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>NumericUpDown</Type>
+              <Description>Enter Temperature (Creativity)</Description>
+              <Name>v_temperature</Name>
+              <ToolId value="37" />
+              <Minimum value="0" />
+              <Maximum value="1" />
+              <Increment value="0.05" />
+              <Default value="1" />
+              <Decimals value="2" />
+            </Question>
+            <Question>
+              <Type>NumericUpDown</Type>
+              <Description>Enter Candidate Count (Number of Version Outputs)</Description>
+              <Name>v_candidate_count</Name>
+              <ToolId value="39" />
+              <Minimum value="1" />
+              <Maximum value="8" />
+              <Increment value="1" />
+              <Default value="1" />
+              <Decimals value="0" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (46)</Description>
+              <Name>Macro Input (46)</Name>
+              <ToolId value="46" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (47)</Description>
+              <Name>Macro Output (47)</Name>
+              <ToolId value="47" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="9" Selected="False" />
+        <Tool ToolId="46" Selected="True" />
+        <Tool ToolId="47" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
