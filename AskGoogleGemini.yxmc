@@ -14,9 +14,74 @@
         </Annotation>
       </Properties>
     </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Label.Label">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Link.Link">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1616" y="356" width="159" height="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Debug output</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Debug output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+            <Position x="1626" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Name>output_debug</Name>
+              <Abbrev>D</Abbrev>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Output</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="56" y="440" width="470" height="199" />
+        <Position x="20" y="451" width="627" height="199" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -35,7 +100,7 @@
       <ChildNodes>
         <Node ToolID="37">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="222" y="474" width="59" height="59" />
+            <Position x="186" y="486" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -49,7 +114,7 @@
         </Node>
         <Node ToolID="38">
           <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
-            <Position x="222" y="570" width="59" height="59" />
+            <Position x="186" y="582" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -63,7 +128,7 @@
         </Node>
         <Node ToolID="39">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="366" y="474" width="59" height="59" />
+            <Position x="330" y="486" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -77,7 +142,7 @@
         </Node>
         <Node ToolID="40">
           <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
-            <Position x="366" y="570" width="59" height="59" />
+            <Position x="330" y="582" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -91,7 +156,7 @@
         </Node>
         <Node ToolID="43">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="66" y="474" width="59" height="59" />
+            <Position x="30" y="485" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -104,7 +169,35 @@
         </Node>
         <Node ToolID="44">
           <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
-            <Position x="66" y="570" width="59" height="59" />
+            <Position x="30" y="582" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Update Value</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+            <Position x="486" y="486" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>drop_down_model</Name>
+              <AnnotationText>Drop Down (63)</AnnotationText>
+              <DefaultAnnotationText>drop_down_model</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="498" y="558" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -120,7 +213,7 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="55" width="785" height="368" />
+        <Position x="18" y="55" width="1107" height="391" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -139,7 +232,7 @@
       <ChildNodes>
         <Node ToolID="2">
           <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
-            <Position x="692" y="89" />
+            <Position x="954" y="89" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -154,10 +247,17 @@
                 <Fields orderChanged="False">
                   <Field name="RecordID" selected="False" />
                   <Field name="Query" selected="False" />
+                  <Field name="service_endpoint" selected="False" />
+                  <Field name="rest_resource" selected="False" />
+                  <Field name="model" selected="False" />
+                  <Field name="method" selected="False" />
+                  <Field name="generic_URI" selected="False" />
                   <Field name="URl" selected="False" />
                   <Field name="temperature" selected="False" />
                   <Field name="candidateCount" selected="False" />
                   <Field name="text" selected="False" />
+                  <Field name="body_bison" selected="False" />
+                  <Field name="body_gemini" selected="False" />
                   <Field name="body" selected="False" />
                   <Field name="*Unknown" selected="False" />
                 </Fields>
@@ -182,11 +282,18 @@
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
                 <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=keyvalue&quot;" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
                 <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
                 <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
               </RecordInfo>
@@ -196,7 +303,7 @@
         </Node>
         <Node ToolID="3">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="296" y="89" />
+            <Position x="570" y="89" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -212,8 +319,13 @@
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="Query" size="2147483647" source="Formula: &quot;Write me a job description for an Alteryx Engineer&quot;" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: [URL]+&quot;key&quot;" type="V_String" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
               </RecordInfo>
             </MetaInfo>
@@ -222,7 +334,7 @@
         </Node>
         <Node ToolID="4">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="392" y="89" />
+            <Position x="666" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -239,7 +351,12 @@
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
               </RecordInfo>
@@ -249,7 +366,7 @@
         </Node>
         <Node ToolID="5">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="392" y="197" width="108" height="216" />
+            <Position x="666" y="198" width="108" height="216" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -273,7 +390,7 @@ This value must be between [1, 8], inclusive. If unset, this will default to 1.<
         </Node>
         <Node ToolID="6">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="200" y="197" width="184" height="216" />
+            <Position x="474" y="198" width="184" height="216" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -297,34 +414,43 @@ Values can range from [0.0,1.0], inclusive. A value closer to 1.0 will produce r
         </Node>
         <Node ToolID="8">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="500" y="89" />
+            <Position x="762" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <FormulaFields>
                 <FormulaField expression="[Query]" field="text" size="2147483647" type="V_String" />
-                <FormulaField expression="'{&quot;prompt&quot;:&#xA;		 {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" field="body" size="1073741823" type="V_WString" />
+                <FormulaField expression="'{&quot;prompt&quot;:&#xA;		 {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" field="body_bison" size="1073741823" type="V_WString" />
+                <FormulaField expression="'{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" field="body_gemini" size="1073741823" type="V_WString" enabled="true" />
+                <FormulaField expression="if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" field="body" size="1073741823" type="V_WString" enabled="true" />
               </FormulaFields>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
               <AnnotationText>Create Prompt from supplied attribution</AnnotationText>
               <DefaultAnnotationText>text = [Query]
-body = '{"prompt":
+body_bison = '{"prompt":
 		 {"text": "'+ [text] + 
 '"}
 ,
-    "temperatu...</DefaultAnnotationText>
+    "tem...</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="Query" size="2147483647" source="Formula: &quot;Write me a job description for an Alteryx Engineer&quot;" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: [URL]+&quot;key&quot;" type="V_String" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -332,11 +458,11 @@ body = '{"prompt":
         </Node>
         <Node ToolID="9">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="608" y="197" />
+            <Position x="858" y="198" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_44620_0569167b0f307043b16d7e9c16778e4b_\Engine_44620_46ebb25e4a07ee44a99c6d389cd475c7~.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4416_e405d115d30f9c41aafb4fbfdcb94e29_\Engine_4416_96dc720acb1f674d96adc8610904ac2d~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -360,7 +486,7 @@ body = '{"prompt":
         </Node>
         <Node ToolID="10">
           <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
-            <Position x="764" y="89" />
+            <Position x="1050" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -377,12 +503,19 @@ body = '{"prompt":
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Query" size="2147483647" source="Formula: &quot;Write me a job description for an Alteryx Engineer&quot;" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: [URL]+&quot;key&quot;" type="V_String" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
                 <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
                 <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
                 <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
@@ -393,7 +526,7 @@ body = '{"prompt":
         </Node>
         <Node ToolID="11">
           <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-            <Position x="608" y="89" />
+            <Position x="858" y="89" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -412,12 +545,19 @@ body = '{"prompt":
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Query" size="2147483647" source="Formula: &quot;Write me a job description for an Alteryx Engineer&quot;" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: [URL]+&quot;key&quot;" type="V_String" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -425,7 +565,7 @@ body = '{"prompt":
         </Node>
         <Node ToolID="12">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="68" y="195" width="108" height="60" />
+            <Position x="354" y="198" width="108" height="60" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -446,24 +586,30 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="45">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="211" y="89" />
+            <Position x="474" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <FormulaFields>
-                <FormulaField expression="&quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=keyvalue&quot;" field="URl" size="2147483647" type="V_String" />
+                <FormulaField expression="[generic_URI]+&quot;keyvalue&quot;" field="URl" size="2147483647" type="V_String" />
               </FormulaFields>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
               <AnnotationText>API key</AnnotationText>
-              <DefaultAnnotationText>URl = "https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:g...</DefaultAnnotationText>
+              <DefaultAnnotationText><![CDATA[URl = [generic_URI]+"keyvalue"
+]]></DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=keyvalue&quot;" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;keyvalue&quot;" type="V_String" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -471,7 +617,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="46">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-            <Position x="104" y="89" />
+            <Position x="67" y="89" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -508,11 +654,187 @@ Change Model used Here</Text>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
         </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="65" y="162" width="216" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>originally "https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=keyvalue"</Text>
+              <Font name="Arial" size="6" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="30" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="2" />
+              <Fields>
+                <Field name="service_endpoint" />
+                <Field name="rest_resource" />
+                <Field name="model" />
+                <Field name="method" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>https://generativelanguage.googleapis.com</c>
+                  <c>v1beta2</c>
+                  <c>text-bison-001</c>
+                  <c>generateText</c>
+                </r>
+                <r>
+                  <c>https://generativelanguage.googleapis.com</c>
+                  <c>v1beta</c>
+                  <c>gemini-pro</c>
+                  <c>generateContent</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>param</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="90" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" field="generic_URI" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>generic_URI = [service_endpoint]+"/"+[rest_resource]+"/models/"+[model]+":"+[met...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="378" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="150" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>model</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2024-06-22 15:02:29</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>text-bison-001</Operand>
+                  <StartDate>2024-06-22 15:02:29</StartDate>
+                  <EndDate>2024-06-22 15:02:29</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[model] = "text-bison-001"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
       </ChildNodes>
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="836" y="54" width="938" height="268" />
+        <Position x="1136" y="56" width="998" height="267" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -531,7 +853,7 @@ Change Model used Here</Text>
       <ChildNodes>
         <Node ToolID="14">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="846" y="88" />
+            <Position x="1146" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -551,12 +873,19 @@ Change Model used Here</Text>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Query" size="2147483647" source="Formula: &quot;Write me a job description for an Alteryx Engineer&quot;" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: [URL]+&quot;key&quot;" type="V_String" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
                 <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
                 <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
                 <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
@@ -572,7 +901,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="15">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="930" y="89" />
+            <Position x="1242" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -589,12 +918,19 @@ Change Model used Here</Text>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Query" size="2147483647" source="Formula: &quot;Write me a job description for an Alteryx Engineer&quot;" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: [URL]+&quot;key&quot;" type="V_String" />
+                <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
                 <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
                 <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
                 <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
@@ -611,7 +947,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="16">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="1146" y="90" />
+            <Position x="1530" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -658,7 +994,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="17">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1062" y="89" />
+            <Position x="1434" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -675,11 +1011,18 @@ Change Model used Here</Text>
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
                 <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
                 <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
                 <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
                 <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
@@ -695,11 +1038,18 @@ Change Model used Here</Text>
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
                 <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
                 <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
                 <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
                 <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
@@ -716,7 +1066,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="18">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1146" y="233" />
+            <Position x="1530" y="234" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -733,11 +1083,18 @@ Change Model used Here</Text>
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
                 <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
                 <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
                 <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
                 <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
@@ -753,11 +1110,18 @@ Change Model used Here</Text>
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
                 <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
                 <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
                 <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
                 <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
@@ -774,7 +1138,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="19">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1290" y="222" />
+            <Position x="1626" y="222" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -791,11 +1155,18 @@ Change Model used Here</Text>
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
                 <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
                 <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
                 <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
                 <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
@@ -811,11 +1182,18 @@ Change Model used Here</Text>
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
                 <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
                 <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
                 <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
                 <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
@@ -832,7 +1210,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="20">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="1362" y="222" />
+            <Position x="1722" y="222" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -893,11 +1271,18 @@ Change Model used Here</Text>
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
                 <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
                 <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
                 <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
                 <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
@@ -913,8 +1298,22 @@ Change Model used Here</Text>
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
                 <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
                 <Field name="HEADER" size="1073741823" source="JSON_Parse" type="V_WString" />
                 <Field name="Right_Query" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Right_service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Right_rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Right_model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Right_method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Right_generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="Right_body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="Right_body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
                 <Field name="VALUE" size="1073741823" source="JSON_Parse" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
@@ -922,11 +1321,18 @@ Change Model used Here</Text>
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
                 <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
                 <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
                 <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
                 <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
@@ -943,7 +1349,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="21">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="1470" y="222" />
+            <Position x="1818" y="222" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -974,7 +1380,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="22">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="1566" y="102" />
+            <Position x="1914" y="102" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -1041,7 +1447,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="26">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1350" y="89" />
+            <Position x="1722" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1076,7 +1482,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="47">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-            <Position x="1650" y="102" />
+            <Position x="2010" y="102" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1094,7 +1500,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="48">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1002" y="89" />
+            <Position x="1338" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1117,11 +1523,18 @@ Change Model used Here</Text>
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
                 <Field name="Query" size="2147483647" source="TextInput:" type="V_String" />
-                <Field name="URl" size="2147483647" source="Formula: &quot;https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyAkEwvKLhzOBcHsrVsEV-VEl7hWMzMhp9s&quot;" type="V_String" />
+                <Field name="service_endpoint" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="rest_resource" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="model" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="method" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="generic_URI" size="1073741823" source="Formula: [service_endpoint]+&quot;/&quot;+[rest_resource]+&quot;/models/&quot;+[model]+&quot;:&quot;+[method]+&quot;?key=&quot;&#xA;" type="V_WString" />
+                <Field name="URl" size="2147483647" source="Formula: [generic_URI]+&quot;AIzaSyA-9MM1ZyK8IXLJ3hTBrU8QcDbfhZ2Q6cM&quot;" type="V_String" />
                 <Field name="temperature" size="2147483647" source="Formula: 1.0" type="V_String" />
-                <Field name="candidateCount" size="2147483647" source="Formula: 1" type="V_String" />
+                <Field name="candidateCount" size="2147483647" source="Formula: 1.0" type="V_String" />
                 <Field name="text" size="2147483647" source="Formula: [Query]" type="V_String" />
-                <Field name="body" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_bison" size="1073741823" source="Formula: '{&quot;prompt&quot;:&#xA;   {&quot;text&quot;: &quot;'+ [text] + &#xA;'&quot;}&#xA;,&#xA;    &quot;temperature&quot;: &quot;'+[temperature]+'&quot;,&#xA;    &quot;candidate_count&quot;: &quot;'+[candidateCount]+'&quot;&#xA;}'" type="V_WString" />
+                <Field name="body_gemini" size="1073741823" source="Formula: '{&#xA;    &quot;contents&quot;: [&#xA;        {&#xA;            &quot;parts&quot;: [&#xA;                {&#xA;                    &quot;text&quot;: &quot;'+[Query]+'&quot;&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}&#xA;'" type="V_WString" />
+                <Field name="body" size="1073741823" source="Formula: if [model]='text-bison-001' then&#xA;[body_bison]&#xA;else&#xA;[body_gemini]&#xA;endif" type="V_WString" />
                 <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
                 <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
                 <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
@@ -1138,7 +1551,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="53">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-            <Position x="1290" y="90" />
+            <Position x="1626" y="90" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1171,7 +1584,7 @@ Change Model used Here</Text>
         </Node>
         <Node ToolID="55">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="1146" y="186" width="140" height="24" />
+            <Position x="1160" y="200" width="140" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1306,8 +1719,20 @@ Change Model used Here</Text>
       <Destination ToolID="45" Connection="Action" />
     </Connection>
     <Connection>
-      <Origin ToolID="46" Connection="Output" />
+      <Origin ToolID="61" Connection="Output" />
       <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="63" Connection="Question" />
+      <Destination ToolID="65" Connection="Question" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="65" Connection="Action" />
+      <Destination ToolID="64" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="2" Connection="Output" />
@@ -1334,8 +1759,24 @@ Change Model used Here</Text>
       <Destination ToolID="2" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="61" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="True" />
+      <Destination ToolID="61" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="14" Connection="Output" />
       <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="15" Connection="Output" />
@@ -1440,13 +1881,19 @@ Change Model used Here</Text>
         <Value />
         <IsNumeric value="True" />
       </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>drop_down_model</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
     </Constants>
     <MetaInfo>
       <NameIsFileName value="True" />
       <Name>AskGoogleGemini</Name>
       <Description>Allows user to ask Google Gemini AI</Description>
       <RootToolName />
-      <ToolVersion>1.0</ToolVersion>
+      <ToolVersion>1.1</ToolVersion>
       <ToolInDb value="False" />
       <CategoryName>GenAi</CategoryName>
       <SearchTags>GenAi, Google, Gemini, Bard, API</SearchTags>
@@ -1504,6 +1951,15 @@ Change Model used Here</Text>
               <ReplaceText>keyvalue</ReplaceText>
               <Destination>45/FormulaFields/FormulaField/@expression</Destination>
             </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="65" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>64/Simple/Operands/Operand</Destination>
+            </Action>
           </True>
         </NoCondition>
       </Actions>
@@ -1558,13 +2014,44 @@ Change Model used Here</Text>
               <Name>Macro Output (47)</Name>
               <ToolId value="47" />
             </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (56)</Description>
+              <Name>Macro Output (56)</Name>
+              <ToolId value="56" />
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Model</Description>
+              <Name>drop_down_model</Name>
+              <ToolId value="63" />
+              <Multiple value="False" />
+              <Default>text-bison-001</Default>
+              <Mode>Manual</Mode>
+              <Manual_Values><![CDATA[text-bison-001
+gemini-pro
+]]></Manual_Values>
+            </Question>
+            <Question>
+              <Type>Label</Type>
+              <Description>for gemini-pro have a look for supported locations (warning on billing)</Description>
+              <Name>Label (66)</Name>
+              <ToolId value="66" />
+            </Question>
+            <Question>
+              <Type>Link</Type>
+              <Description>gemini pro available regions</Description>
+              <Name>Link (67)</Name>
+              <ToolId value="67" />
+              <LinkDest>https://ai.google.dev/gemini-api/docs/available-regions</LinkDest>
+            </Question>
           </Questions>
         </Question>
       </Questions>
       <ModuleType>Macro</ModuleType>
       <MacroCustomHelp value="False" />
       <MacroDynamicOutputFields value="False" />
-      <MacroImage>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</MacroImage>
+      <MacroImage>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</MacroImage>
       <MacroInputs />
       <MacroOutputs />
       <Wiz_CustomHelp value="False" />
@@ -1574,6 +2061,7 @@ Change Model used Here</Text>
         <Tool ToolId="9" Selected="False" />
         <Tool ToolId="46" Selected="True" />
         <Tool ToolId="47" Selected="True" />
+        <Tool ToolId="56" Selected="True" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />
